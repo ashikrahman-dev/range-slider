@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.svg" />
+    <title>Range Slider</title>
+
+    <!-- Inter Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="double-slider-box">
+        <h3 class="range-title">
+            Range slider
+        </h3>
+        <div class="range-slider">
+            <span class="slider-track"></span>
+            <input type="range" name="min_val" class="min-val" min="10" max="12000" value="2000" oninput="slideMin()">
+            <input type="range" name="max_val" class="max-val" min="10" max="12000" value="7000" oninput="slideMax()">
+            <div class="tooltip min-tooltip"></div>
+            <div class="tooltip max-tooltip"></div>
+        </div>
+        <div class="input-box">
+            <div class="min-box">
+                <div class="input-wrap">
+                    <span class="input-addon">$</span>
+                    <input type="text" name="min_input" class="input-field min-input" onchange="setMinInput()">
+                </div>
+            </div>
+            <div class="max-box">
+                <div class="input-wrap">
+                    <span class="input-addon">$</span>
+                    <input type="text" name="max_input" class="input-field max-input" onchange="setMaxInput()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- All Scripts file -->
+    <!-- Main JS file -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
